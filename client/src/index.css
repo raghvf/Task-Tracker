@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #4F46E5;
+  --color-primary-dark: #4338CA;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+}
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 antialiased transition-colors duration-300;
+  }
+
+  .dark body,
+  body.dark {
+    @apply bg-gray-950 text-gray-100;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+
+  .dark .glass {
+    @apply bg-gray-900/70 border-gray-700/50;
+  }
+
+  .gradient-btn {
+    @apply bg-gradient-to-r from-primary to-indigo-600 text-white font-medium
+           shadow-md hover:shadow-lg hover:from-primary-dark hover:to-indigo-700
+           transition-all duration-200 active:scale-[0.98];
+  }
+}
