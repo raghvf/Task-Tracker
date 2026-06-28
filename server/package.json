@@ -1,4 +1,8 @@
 {
+  "engines": {
+  "node": "22.x"
+  },
+
   "name": "task-tracker-server",
   "version": "1.0.0",
   "description": "Task Tracker REST API",
