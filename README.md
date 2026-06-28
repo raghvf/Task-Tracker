@@ -166,18 +166,6 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Backend (`server/.env`)
 
-| Variable   | Description                          | Example |
-|-----------|--------------------------------------|---------|
-| PORT      | Server port                          | 5000    |
-| MONGO_URI | MongoDB Atlas connection string      | mongodb+srv://... |
-| CLIENT_URL| Frontend URL for CORS                | http://localhost:5173 |
-
-### Frontend (`client/.env`)
-
-| Variable      | Description        | Example |
-|--------------|--------------------|---------|
-| VITE_API_URL | Backend API base URL | http://localhost:5000/api |
-
 ## API Endpoints
 
 | Method | Endpoint          | Description |
